@@ -1,3 +1,4 @@
+from distutils.command.upload import upload
 from django.db import models
 
 class Creations(models.Model):
@@ -7,4 +8,3 @@ class Creations(models.Model):
     photo = models.ImageField(upload_to='images',width_field=None, height_field=None)
     titre = models.fields.TextField(max_length=50)
     description = models.fields.TextField(max_length=1000)
-

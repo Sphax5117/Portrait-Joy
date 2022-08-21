@@ -5,8 +5,7 @@ from main.models import Creations
 
 
 def index(request):
-    creations = Creations.objects.all()
-    return render(request, "index.html", {'creations': creations})
+    return render(request, "index.html")
 
 def about(request):
     return render(request, "about.html")
@@ -14,5 +13,12 @@ def about(request):
 def contact(request):
     return render(request, "contact.html")
 
+def tarifs(request):
+    return render(request, "tarifs.html")
+
+def services(request):
+    return render(request, "services.html")
+
 def creations(request):
-    return render(request, "creations.html")
+    creations = Creations.objects.all()
+    return render(request, "creations.html", {'creations': creations})

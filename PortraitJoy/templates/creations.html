@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +8,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creations</title>
+ 
 </head>
 <body>
+
+    {% block content %}
     <h1>Creations</h1>
+    <h1>RIZEJJ</h1>
+    {% for c in creations %}
+    <h1>{{ c.titre }}</h1>
+    <h2>{{ c.description }}</h2>
+    <img src="{{ c.photo.url }}" alt=""> <!-- NEED TO USE .URL AFTER IMAGES-->
+
+    
+    {% endfor %}
+    {% endblock %}
 </body>
 </html>
+

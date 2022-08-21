@@ -1,0 +1,82 @@
+body{
+    background-color: #eee0cb;
+}
+
+a{
+    color: #634923;
+    text-decoration: none;
+    margin: 30px;
+    font-family: muli,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1{
+    font-family: 'A DAY WITHOUT SUN', sans-serif;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin: 2px;
+    height: fit-content;     
+    text-align: center;
+    font-weight: 400;                       
+}
+
+h2{
+    font-family: 'Calligraffitti', cursive;
+    color: #b88539;
+    text-align: center;
+    height:15px;
+}
+
+header{
+    display: flex;
+    justify-content:  space-between;
+    align-items: baseline;
+}
+
+.button_right{
+    display: flex;
+    align-items: baseline;
+}
+
+.button{
+    display: inline-block;
+    position: relative;
+}
+
+a::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #997135;
+    transition: width 0.25s ease-out;
+}
+
+a:hover::before{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+
+.icon{
+    margin: 25px;
+}
+
+
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+img{
+    border-radius: 5%;
+}
+
+h3{
+    margin: 3px auto;
+}
