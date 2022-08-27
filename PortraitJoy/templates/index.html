@@ -12,6 +12,7 @@
     <title>TEst</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet"> 
     <link href="http://fonts.cdnfonts.com/css/a-day-without-sun" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
@@ -19,17 +20,11 @@
 </head>
 <body>
     <header>
-        <div class="button_left">
-            <a class="icon" href="http://www.instagram.com/lesportraitsdejoy/"> <i class="fa-brands fa-instagram fa-2x"></i></a>
-            <a class="icon" href="https://www.facebook.com/Lesportraitsdejoy/"> <i class="fa-brands fa-facebook-f fa-2x"></i></a>
+        <div class="topIcon">
+            <a class="icon" href="http://www.instagram.com/lesportraitsdejoy/"> <i class="fa-brands fa-instagram fa-3x"></i></a>
+            <a class="icon" href="https://www.facebook.com/Lesportraitsdejoy/"> <i class="fa-brands fa-facebook-f fa-3x"></i></a>
+            <a class="icon" href="https://www.facebook.com/Lesportraitsdejoy/"> <i class="fa-solid fa-envelope fa-3x"></i></a>
         </div>
-        <div class="button_right">
-            <a class="button" href="creations/"><h3>Galerie</h3></a>
-            <a class="button" href="services/"><h3>Services</h3></a>
-            <a class="button" href="tarifs/"><h3>Tarifs</h3></a>
-            <a class="button" href="contact/"><h3>Contact</h3></a>
-            <a href="contact/"> <i class="fa-solid fa-envelope fa-2x"></i></a>
-        
     </header>
     <main>
         <div class="container">
@@ -37,7 +32,17 @@
                 <img class="logo" src="{% static '/IMAGES/logo.gif' %}" alt="Sandrine Bourdon">
             </div>
         </div>
-        <a href="about/"><img src="images/bongocat.jpg" alt="à propos"></a>
+        <div class="description">
+            <h2>Des portraits réalistes et personnalisables,</h2>
+            <h2>sur commande, d'après photos</h2>
+        </div>
+        <div class="button_right">
+            <a href="about/" class="button"><h3>À PROPOS DE MOI</h3></a>
+            <a class="button" href="creations/"><h3>CRÉATIONS</h3></a>
+            <a class="button" href="services/"><h3>SERVICES</h3></a>
+            <a class="button" href="tarifs/"><h3>TARIFS</h3></a>
+            <a href="avis/" class="button"><h3>AVIS</h3></a>
+        </div>
     </main>
     <footer>
 

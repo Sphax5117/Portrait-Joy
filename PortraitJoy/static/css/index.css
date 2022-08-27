@@ -1,11 +1,11 @@
 body{
-    background-color: #eee0cb;
+    background-color: #ffffff;
 }
 
 a{
-    color: #634923;
+   
     text-decoration: none;
-    margin: 30px;
+    margin: 5px;
     font-family: muli,sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -15,62 +15,64 @@ h1{
     font-family: 'A DAY WITHOUT SUN', sans-serif;
     text-transform: uppercase;
     font-size: 80px;
-    margin: 2px;
     height: fit-content;     
     text-align: center;
-    font-weight: 400;                       
+    font-weight: 400;
+
 }
+
 
 h2{
     font-family: 'Calligraffitti', cursive;
-    color: #b88539;
+    color: #000000;
     text-align: center;
     height:15px;
+    margin-top: 0px;    
+    
+}
+
+h3{
+    font-family: 'Aboreto', cursive;
+    color: black;
+}
+
+h3::after {
+    height: 25px;
+    content: '';
+    width: 25px;
+    background-color: rgb(230, 134, 182);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+.button_right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
 }
 
 header{
     display: flex;
-    justify-content:  space-between;
+    justify-content:center;
     align-items: baseline;
 }
 
-.button_right{
-    display: flex;
-    align-items: baseline;
-}
-
-.button{
-    display: inline-block;
-    position: relative;
-}
-
-a::before{
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background-color: #997135;
-    transition: width 0.25s ease-out;
-}
-
-a:hover::before{
-    width: 100%;
-    left: 0;
-    right: auto;
-}
 
 .icon{
     margin: 25px;
+    color: rgb(199, 104, 93);
 }
 
 
 
-main{
+.container{
     display: flex;
-    justify-content: space-around;
     align-items:center;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 img{
