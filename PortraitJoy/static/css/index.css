@@ -2,21 +2,33 @@ body{
     background-color: #ffffff;
 }
 
+header{
+    grid-column: 2/4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main{grid-column: 2/12;}
+
+#container{
+    display: grid;
+    grid-template-columns: 50px repeat(12, 8.3%) 50px ;
+    grid-template-rows: 70px;
+}
+
 a{
    
     text-decoration: none;
-    margin: 5px;
     font-family: muli,sans-serif;
     font-weight: 700;
     font-style: normal;
+    height: 20px;
 }
 
 h1{
     font-family: 'A DAY WITHOUT SUN', sans-serif;
     text-transform: uppercase;
     font-size: 80px;
-    height: fit-content;     
-    text-align: center;
     font-weight: 400;
 
 }
@@ -25,9 +37,8 @@ h1{
 h2{
     font-family: 'Calligraffitti', cursive;
     color: #000000;
-    text-align: center;
-    height:15px;
-    margin-top: 0px;    
+    margin-top: 0px;
+    margin-bottom: 0px;    
     
 }
 
@@ -36,44 +47,87 @@ h3{
     color: black;
 }
 
-h3::after {
-    height: 25px;
+#about::before {
+    height: 20px;
     content: '';
-    width: 25px;
-    background-color: rgb(230, 134, 182);
+    width: 20px;
+    background-color: #d695a3;
     border-radius: 50%;
     display: inline-block;
+    position: relative;
+    left: 180px;
+    top: 30px;
     margin-left: 20px;
   }
 
-.button_right{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
+#creations::before{
+    height: 20px;
+    content: '';
+    width: 20px;
+    background-color: #ffb9b3;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 149px;
+    top: 30px;
+    margin-left: 20px;
 }
 
-header{
-    display: flex;
-    justify-content:center;
-    align-items: baseline;
+
+#services::before{
+    height: 20px;
+    content: '';
+    width: 20px;
+    background-color: #d2816b;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 137px;
+    top: 30px;
+    margin-left: 20px;
 }
+
+
+#tarifs::before{
+    height: 20px;
+    content: '';
+    width: 20px;
+    background-color: #bfbfbf;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 125px;
+    top: 30px;
+    margin-left: 20px;
+}
+
+
+#avis::before{
+    height: 20px;
+    content: '';
+    width: 20px;
+    background-color: #d6b8f0;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    left: 115px;
+    top: 30px;
+    margin-left: 20px;
+}
+
+
+.description{
+    margin-bottom: 10px;
+}
+
 
 
 .icon{
-    margin: 25px;
     color: rgb(199, 104, 93);
 }
 
 
 
-.container{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    margin-top: 30px;
-}
 
 img{
     border-radius: 5%;
