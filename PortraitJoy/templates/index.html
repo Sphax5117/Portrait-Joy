@@ -12,16 +12,25 @@
     <title>TEst</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Proza+Libre&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
     <script src="https://kit.fontawesome.com/85c1ddf497.js" crossorigin="anonymous"></script>
 </head>
-<body id="container">
-    <header>
+<body class="container">
+    <header class="container">
+        <div class="icon_container">
             <a class="icon" href="http://www.instagram.com/lesportraitsdejoy/"> <i class="fa-brands fa-instagram fa-3x"></i></a>
             <a class="icon" href="https://www.facebook.com/Lesportraitsdejoy/"> <i class="fa-brands fa-facebook-f fa-3x"></i></a>
             <a class="icon" href="https://www.facebook.com/Lesportraitsdejoy/"> <i class="fa-solid fa-envelope fa-3x"></i></a>
+        </div>
+       <div class="button_container">
+            <a id="about" href="about/" class="button"><h3>À propos de moi</h3></a>
+            <a id="creations" class="button" href="creations/"><h3>Créations</h3></a>
+            <a id="services" class="button" href="services/"><h3>Services</h3></a>
+            <a id="tarifs" class="button" href="tarifs/"><h3>Tarifs</h3></a>
+            <a id="avis" href="avis/" class="button"><h3>Avis</h3></a>
+       </div>
     </header>
     <main>
         <div>
@@ -32,13 +41,6 @@
         <div class="description">
             <h2>Des portraits réalistes et personnalisables,</h2>
             <h2>sur commande, d'après photos</h2>
-        </div>
-        <div class="button_right">
-            <a id="about" href="about/" class="button"><h3>À PROPOS DE MOI</h3></a>
-            <a id="creations" class="button" href="creations/"><h3>CRÉATIONS</h3></a>
-            <a id="services" class="button" href="services/"><h3>SERVICES</h3></a>
-            <a id="tarifs" class="button" href="tarifs/"><h3>TARIFS</h3></a>
-            <a id="avis" href="avis/" class="button"><h3>AVIS</h3></a>
         </div>
     </main>
     <footer>

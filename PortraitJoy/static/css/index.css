@@ -3,26 +3,36 @@ body{
 }
 
 header{
-    grid-column: 2/4;
+    grid-column: 1/14;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 main{grid-column: 2/12;}
 
-#container{
+.button{
+    font-family: 'Proza Libre', Times, serif;
+    color: #756C66;
+    font-size: 20px;
+}
+
+.button_right{
+    display: flex;
+    align-items: flex-start;
+}
+
+.container{
     display: grid;
-    grid-template-columns: 50px repeat(12, 8.3%) 50px ;
-    grid-template-rows: 70px;
+    grid-template-columns: 50px repeat(12, 8.1%) 50px ;
+    grid-template-rows: 120px;
 }
 
 a{
    
     text-decoration: none;
-    font-family: muli,sans-serif;
     font-weight: 700;
     font-style: normal;
-    height: 20px;
+    margin-right: 60px;
 }
 
 h1{
@@ -42,79 +52,6 @@ h2{
     
 }
 
-h3{
-    font-family: 'Aboreto', cursive;
-    color: black;
-}
-
-#about::before {
-    height: 20px;
-    content: '';
-    width: 20px;
-    background-color: #d695a3;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
-    left: 180px;
-    top: 30px;
-    margin-left: 20px;
-  }
-
-#creations::before{
-    height: 20px;
-    content: '';
-    width: 20px;
-    background-color: #ffb9b3;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
-    left: 149px;
-    top: 30px;
-    margin-left: 20px;
-}
-
-
-#services::before{
-    height: 20px;
-    content: '';
-    width: 20px;
-    background-color: #d2816b;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
-    left: 137px;
-    top: 30px;
-    margin-left: 20px;
-}
-
-
-#tarifs::before{
-    height: 20px;
-    content: '';
-    width: 20px;
-    background-color: #bfbfbf;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
-    left: 125px;
-    top: 30px;
-    margin-left: 20px;
-}
-
-
-#avis::before{
-    height: 20px;
-    content: '';
-    width: 20px;
-    background-color: #d6b8f0;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
-    left: 115px;
-    top: 30px;
-    margin-left: 20px;
-}
-
 
 .description{
     margin-bottom: 10px;
@@ -123,11 +60,24 @@ h3{
 
 
 .icon{
-    color: rgb(199, 104, 93);
+    color: #F1B58A;
+    
 }
 
+i{
+    transform: scale(1.2);
+}
 
+.icon_container{
+    grid-column: 2/4;
+}
 
+.button_container{
+    grid-column: 8/14;
+    display: flex;
+    justify-content: space-between;
+
+}
 
 img{
     border-radius: 5%;
@@ -135,4 +85,5 @@ img{
 
 h3{
     margin: 3px auto;
+
 }
