@@ -1,89 +1,11 @@
-body{
-    background-color: #ffffff;
-}
-
-header{
-    grid-column: 1/14;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-main{grid-column: 2/12;}
-
-.button{
-    font-family: 'Proza Libre', Times, serif;
-    color: #756C66;
-    font-size: 20px;
-}
-
-.button_right{
-    display: flex;
-    align-items: flex-start;
-}
-
-.container{
-    display: grid;
-    grid-template-columns: 50px repeat(12, 8.1%) 50px ;
-    grid-template-rows: 120px;
-}
-
-a{
+@font-face {
+    font-family: "Lobster Two";
+    src: url("/static/fonts/LobsterTwo-Regular.otf") format("opentype");
+   }
    
-    text-decoration: none;
-    font-weight: 700;
-    font-style: normal;
-    margin-right: 60px;
-}
-
-h1{
-    font-family: 'A DAY WITHOUT SUN', sans-serif;
-    text-transform: uppercase;
-    font-size: 80px;
-    font-weight: 400;
-    color: red;
-}
 
 
-h2{
-    font-family: 'Calligraffitti', cursive;
-    color: #000000;
-    margin-top: 0px;
-    margin-bottom: 0px;    
-    
-}
-
-
-.description{
-    margin-bottom: 10px;
-}
-
-
-
-.icon{
-    color: #F1B58A;
-    
-}
-
-i{
-    transform: scale(1.2);
-}
-
-.icon_container{
-    grid-column: 2/4;
-}
-
-.button_container{
-    grid-column: 8/14;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-img{
-    border-radius: 5%;
-}
-
-h3{
-    margin: 3px auto;
-
+#navbarText{
+    color: #E7AE85;
+    font-family: 'Lobster Two';
 }
