@@ -68,10 +68,12 @@
     transform: rotate(-135deg);
 }
 
-/* When navbar is collapsed and  */
+
+
+/* When navbar is collapsed */
 
 .navbar-toggler.collapsed .top-bar{
-    margin-top: -15px;
+    margin-top: -14px;
     transform: rotate(0deg);
 }
 
@@ -84,3 +86,68 @@
     margin-top: 15px;
     transform: rotate(0deg);
 }
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-link{ padding-bottom: 0 !important; }
+
+.nav-item{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.20rem;
+}
+
+.navbar-collapse .nav-item::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: #E7AE85; 
+    border-radius: 3px;
+    transition: width 0.30s ease-out;
+}
+
+.nav-item:hover::before{
+    width: 90%;
+    left: 5px;
+    right: auto;
+}
+
+.dark-bg{
+    background-image: linear-gradient(rgba(0,0,0, .2), rgba(0,0,0, .2)), url('/static/IMAGES/hero.png');
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 6vh;
+}
+
+#hero .container{
+    height: 70vh;
+}
+
+#hero h1,
+#hero h2{
+    font-family: 'Lobster Two';
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+
+    .navbar-collapse .nav-item::before{
+        content: none;
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1px;
+    z-index: 1000; 
+  }
