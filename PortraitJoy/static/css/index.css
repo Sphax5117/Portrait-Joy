@@ -120,7 +120,7 @@
 }
 
 .dark-bg{
-    background-image: linear-gradient(rgba(0,0,0, .2), rgba(0,0,0, .2)), url('/static/IMAGES/hero.png');
+    background-image: linear-gradient(rgba(0,0,0, .2), rgba(0,0,0, .2)), url('/static/IMAGES/hand.png');
     background-size: cover;
     background-position: center center;
     margin-bottom: 6vh;
@@ -151,3 +151,18 @@ header {
     border-radius: 1px;
     z-index: 1000; 
   }
+
+.card-img-top{
+    float: left;
+    width:  150px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-body {
+    flex-direction: column;
+  }
+
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #F99182 !important;
+}
