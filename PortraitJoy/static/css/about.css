@@ -2,10 +2,8 @@
     font-family: "Lobster Two";
     src: url("/static/fonts/LobsterTwo-Regular.otf") format("opentype");
    }
-   
 
-
-#navbarText{
+   #navbarText{
     color: #E7AE85;
     font-family: 'Lobster Two';
 }
@@ -119,65 +117,60 @@
     right: auto;
 }
 
-.dark-bg{
-    background-image: linear-gradient(rgba(0,0,0, .2), rgba(0,0,0, .2)), url('/static/IMAGES/hero.jpg');
-    background-size: cover;
-    background-position: center center;
-    margin-bottom: 6vh;
+
+
+.aboutPart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#hero .container{
-    height: 70vh;
+.aboutPart img{
+    width: 250px;
+    height: 250px;
+    margin: 40px;
 }
 
-#hero h1,
-#hero h2{
-    font-family: 'Lobster Two';
-    text-align: center;
-}
-
-@media (max-width: 992px) {
-
-    .navbar-collapse .nav-item::before{
-        content: none;
-    }
-}
-
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    border-radius: 1px;
-    z-index: 1000; 
-  }
-
-.card-img-top{
-    float: left;
-    width:  150px;
-    height: 400px;
-    object-fit: cover;
-}
-
-.card-body {
+.aboutPart p{
+    width: 90%;
+    font-family: 'Medula One', cursive;
+    font-size: 15px;
     flex-direction: column;
-  }
-
-  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #F99182 !important;
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #ffffff00 !important;
-    --bs-btn-border-color: #ffffff00 !important;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #ffffff00 !important;
-    --bs-btn-hover-border-color: #ffffff00 !important;
-    --bs-btn-focus-shadow-rgb: 49,132,253;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #ffffff00 !important;
-    --bs-btn-active-border-color: #ffffff00 !important;
-    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff ;
-    --bs-btn-disabled-bg: #ffffff00 !important;
-    --bs-btn-disabled-border-color: #ffffff00 !important; 
 }
 
+.aboutPart h3{
+    width: 90%;
+    font-family: 'Lobster Two';
+    color: rgb(141, 141, 141);
+    font-size: 30px;
+}   
+
+.aboutPart h2{
+    width: 90%;
+    font-family: 'Abril Fatface', cursive;
+    color: #d4a27d;
+    font-size: 48px;
+}
+
+.about {
+    margin-top: 7%;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutPart {
+      flex-direction: column;
+      text-align: center;
+    }
+    .aboutPart p{
+        width: auto;
+        padding: 0px 15px;
+    }
+
+    .aboutPart h3{
+        width: auto;
+    }
+
+    .aboutPart h2{
+        width: auto;
+    }
+  }
