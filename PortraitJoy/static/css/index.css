@@ -163,6 +163,11 @@ header {
     flex-direction: column;
   }
 
+.card div p{
+    font-size: 12px !important;
+}
+
+
   .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: #F99182 !important;
     --bs-btn-color: #fff;
@@ -179,5 +184,63 @@ header {
     --bs-btn-disabled-color: #fff ;
     --bs-btn-disabled-bg: #ffffff00 !important;
     --bs-btn-disabled-border-color: #ffffff00 !important; 
+}
+
+.abt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 80px 30px;
+    justify-content: center;
+}
+
+.abt div{
+    margin: 20px;
+}
+
+.abt div button{
+    border-radius: 20px;
+    width: 480px;
+    height: 50px;
+    background-color: #E7AE85;
+    border: none;
+    font-size: 32px;
+    font-family: 'Lobster Two';
+}
+
+.abt div button a{
+    text-decoration: none;
+    color: white;
+}
+.abt div h3{
+    margin-bottom: 20px;
+    color: #D4A27D;
+}
+
+.abt img{
+    padding-right: 20px;
+}
+
+@media (max-width: 992px) {
+    .abt div button{
+        width: 200px;
+    }
+
+    .abt div{
+        margin: 0px;
+        text-align: center;
+    }    
+
+    .abt img{
+        padding-right: 10px;
+        width: 170px;
+        height: 160px;
+    }
+
+    .abt{
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+    }
 }
 
