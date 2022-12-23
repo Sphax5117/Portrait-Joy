@@ -198,7 +198,10 @@ header {
     margin: 20px;
 }
 
-.abt div button{
+
+
+.buttonText{
+    color: white;
     border-radius: 20px;
     width: 480px;
     height: 50px;
@@ -208,10 +211,7 @@ header {
     font-family: 'Lobster Two';
 }
 
-.abt div button a{
-    text-decoration: none;
-    color: white;
-}
+
 .abt div h3{
     margin-bottom: 20px;
     color: #D4A27D;
@@ -221,8 +221,32 @@ header {
     padding-right: 20px;
 }
 
+.infos{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 80px 30px;
+    justify-content: center;
+}
+
+
+.infos div{
+    margin: 20px;
+}
+
+.infos div h3{
+    margin-bottom: 20px;
+    color: #D4A27D;
+}
+
+.infos img{
+    padding-left: 20px;
+    width: 300px;
+    height: auto    ;
+}
+
 @media (max-width: 992px) {
-    .abt div button{
+    .buttonText{
         width: 200px;
     }
 
@@ -242,5 +266,59 @@ header {
         width: auto;
         justify-content: center;
     }
+
+    .infos div{
+        margin: 20px;
+        text-align: center;
+    }    
+
+    .infos img{
+        width: auto;
+        height: 200px;
+    }
+
+    .infos{
+        flex-direction: column;
+        width: auto;
+        justify-content: center;
+    }
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem 2rem;
+    text-align: center;
+}
+
+.price p{
+    font-family: 'Lobster Two';
+    max-width: 1200px;
+}
+.price h2{
+    color: #D4A27D;
+    font-size: 50px
+}
+
+.price .images img{
+    margin: 20px 10px;
+}
+
+.price .promotion{
+    display: flex;
+    flex-direction: row;
+}
+
+.price .promotion h2{
+    font-size: 25px;
+    margin: 20px 15px;
+    max-width: 500px;
+}
+
+.price .promotion img{
+    height: auto;
+    width: 40px;
+    margin : 5px;
 }
 
