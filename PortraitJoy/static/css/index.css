@@ -184,6 +184,7 @@ header {
     --bs-btn-disabled-color: #fff ;
     --bs-btn-disabled-bg: #ffffff00 !important;
     --bs-btn-disabled-border-color: #ffffff00 !important; 
+    transition: ease 0.2s !important; 
 }
 
 .abt{
@@ -209,6 +210,7 @@ header {
     border: none;
     font-size: 32px;
     font-family: 'Lobster Two';
+    transition: ease 0.2s;
 }
 
 
@@ -365,3 +367,16 @@ header {
     margin-left: 30px;
 }
 
+.btn-primary:hover{
+    background-color:  #fa7f6c !important;
+    transition: 0.2s ease; 
+}
+
+#email:hover{
+    color: #e5a777;
+}
+
+.buttonText:hover{
+    background-color: #d89b6c !important;
+    transition: ease 0.2s;
+}
