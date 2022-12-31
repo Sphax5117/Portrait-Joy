@@ -1,9 +1,24 @@
+@keyframes smoothscroll1 {
+    from, to { scroll-behavior: smooth; }
+  }
+  
+  @keyframes smoothscroll2 {
+    from, to { scroll-behavior: smooth; }
+  }
+  
+  html {
+    animation: smoothscroll1 1s;
+  }
+  
+  html:focus-within {
+    animation-name: smoothscroll2;
+    scroll-behavior: smooth;
+  }
+
 @font-face {
     font-family: "Lobster Two";
     src: url("/static/fonts/LobsterTwo-Regular.otf") format("opentype");
    }
-   
-
 
 #navbarText{
     color: #E7AE85;
@@ -324,7 +339,7 @@ header {
     margin : 5px;
 }
 
-.contact{
+#contact{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -332,21 +347,21 @@ header {
     text-align: center;
 }
 
-.contact h4 {
+#contact h4 {
     font-size: 18px;
 }
 
-.contact div{
+#contact div{
     margin: 20px;
 }
 
-.contact h2{
+#contact h2{
     color: #e4ae85;
     font-family: 'Lobster Two';
     font-size: 50px;
 }
 
-.contact h3{
+#contact h3{
     font-family: 'Lobster Two';
     color: rgb(144, 144, 144);
 }
@@ -359,12 +374,11 @@ header {
     margin: 10px;
 }
 
-.contact a{
+#contact a{
     text-decoration: none;
     color: #e4ae85;
     font-size: 30px;
     font-family: 'Lobster Two';
-    margin-left: 30px;
 }
 
 .btn-primary:hover{

@@ -16,8 +16,11 @@ def contact(request):
 def tarifs(request):
     return render(request, "tarifs.html")
 
-def services(request):
-    return render(request, "services.html")
+def infos(request):
+    return render(request, "infos.html")
+
+def avis(request):
+    return render(request, "avis.html")
 
 def creations(request):
     creations = Creations.objects.all()

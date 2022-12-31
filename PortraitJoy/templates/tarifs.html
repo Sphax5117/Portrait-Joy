@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Tarifs</h1>
+    {% block content %}
+    <h1>tarifs</h1>
+    {% endblock %}  
 </body>
 </html>
