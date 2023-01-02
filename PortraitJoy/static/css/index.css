@@ -327,10 +327,14 @@ header {
     flex-direction: row;
 }
 
-.price .promotion h2{
-    font-size: 25px;
+.price .promotion div{
     margin: 20px 15px;
     max-width: 500px;
+    flex-direction: column;
+}
+
+.price .promotion h2{
+    font-size: 25px;
 }
 
 .price .promotion img{
@@ -393,4 +397,19 @@ header {
 .buttonText:hover{
     background-color: #d89b6c !important;
     transition: ease 0.2s;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+footer h6, footer a{
+    font-size: 10px;
+    text-decoration: none;
+    color : black;
+    width: 40%;
 }
