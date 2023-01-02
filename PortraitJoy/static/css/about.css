@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Lobster Two";
+    src: url("/static/fonts/LobsterTwo-Regular.otf") format("opentype");
+   }
+
+   #navbarText{
+    color: #E7AE85;
+    font-family: 'Lobster Two';
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+
+.navbar-toggler{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+
+
+.navbar-toggler span{
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon{
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #E7AE85;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar{
+    margin-top: 0px;    
+}
+
+/* When navigation is clicked */
+
+.navbar-toggler .top-bar{
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+    margin-top: 0;
+    transform: rotate(-135deg);
+}
+
+
+
+/* When navbar is collapsed */
+
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -14px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+    margin-top: 15px;
+    transform: rotate(0deg);
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-link{ padding-bottom: 0 !important; }
+
+.nav-item{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.20rem;
+}
+
+.navbar-collapse .nav-item::before{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: #E7AE85; 
+    border-radius: 3px;
+    transition: width 0.30s ease-out;
+}
+
+.nav-item:hover::before{
+    width: 90%;
+    left: 5px;
+    right: auto;
+}
+
+
+
+.aboutPart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutPart img{
+    width: 250px;
+    height: 250px;
+    margin: 40px;
+}
+
+.aboutPart p{
+    width: 90%;
+    font-family: 'Medula One', cursive;
+    font-size: 18px;
+    flex-direction: column;
+}
+
+.aboutPart h3{
+    width: 90%;
+    font-family: 'Lobster Two';
+    color: rgb(141, 141, 141);
+    font-size: 30px;
+}   
+
+.aboutPart h2{
+    width: 90%;
+    font-family: 'Abril Fatface', cursive;
+    color: #d4a27d;
+    font-size: 48px;
+}
+
+.about {
+    margin-top: 7%;
+}
+
+@media screen and (max-width: 600px) {
+    .aboutPart {
+      flex-direction: column;
+      text-align: center;
+    }
+    .aboutPart p{
+        width: auto;
+        padding: 0px 15px;
+    }
+
+    .aboutPart h3{
+        width: auto;
+    }
+
+    .aboutPart h2{
+        width: auto;
+    }
+  }
