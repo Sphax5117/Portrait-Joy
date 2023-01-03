@@ -29,7 +29,8 @@ urlpatterns = [
     path('creations/', views.creations),
     path('infos/', views.infos),
     path('tarifs/', views.tarifs),
-    path('avis/', views.avis)
+    path('avis/', views.avis),
+    path('legal/', views.legal)
 ]
 
 if settings.DEBUG:

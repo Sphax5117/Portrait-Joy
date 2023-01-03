@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Lobster Two";
+    src: url("/static/fonts/LobsterTwo-Regular.otf") format("opentype");
+   }
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    width: 50%;
+    margin: 30px;
+    text-align: center;
+}
+
+.howto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    width: 45%;
+    margin: 30px;
+    text-align: center;
+}
+
+.firstpart{
+    display: flex;
+    flex-direction: row;
+}
+
+.title{
+ font-family: "Lobster Two";
+ color: #E7AE85;
+} 

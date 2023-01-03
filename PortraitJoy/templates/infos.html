@@ -4,11 +4,11 @@
 
 <html lang="fr">
 <head>
+    <link rel="stylesheet" href="{% static 'css/infos.css' %}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
-    <link rel="stylesheet" href="/static/css/about.css">
+    <title>about</title> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Medula+One&display=swap" rel="stylesheet">
@@ -17,40 +17,42 @@
 </head>
 <body>
     {% block content %}
-    <section class="intro">
-        <div class="photos">
-            <img src="/static/IMAGES/hero.png" alt="">
-            <img src="/static/IMAGES/hero.png" alt="">
-            <img src="/static/IMAGES/hero.png" alt="">
-            <img src="/static/IMAGES/hero.png" alt="">
-        </div>
-        <h3>Un dessin unique et personnalisable réalisé à la main avec passion!</h3>
-        <h1>Informations</h1>
-        <p>Vous avez envie d'un cadeau authentique, riche en émotion, pour passer votre message d'amour à un proche lors d'une occasion particulière ou vous offrir une œuvre unique pour compléter la décoration de votre mur des souvenirs ? 
-        Je vous propose d'immortaliser une ou plusieurs photo(s) souvenir de personne(s) ou animal qui ont marqué votre vie où celle de vos proches, en un dessin unique et personnalisable aussi bien sur le support, la couleur ou la technique.</p>
-        <h3>Quels sont mes délais ?</h3>
-        <p>Comptez 15 jours à 1 mois en fonction du nombre de sujets sur votre commande ainsi que de ma liste d'attente (pensez à anticiper pour Noël car en novembre mon planning et souvent complet) </p>
-        <h3>Comment me passer commande ?</h3>
-        <ul>
-            <li>Contactez-moi par sms, par mail, via messenger ou encore instagram pour me parler de votre projet (lien  "contact") je vous répondrai au plus vite pour en discuter et vous conseiller si besoin. 
-            </li>
-            <li>Pour une commande urgente envoyez-moi votre/vos photo/s  accompagné de vos envies pour celle-ci directement par mail en écrivant "COMMANDE URGENTE + DATE DE LIVRAISON SOUHAITÉE " dans la barre d'objet</li>
-        </ul>
-    </section>
-    <section class="howto">
-        <h2>Comment choisir la photo ?</h2>
-        <p>Si vous désirerez un rendu réaliste ou un dessin grand format, il sera important de bien choisir la ou les photos que vous m'enverrez, pour ce faire elle devra repondre à plusieurs critères. (voir plus) </p>
-        <div>
-            <img src="/static/IMAGES/hero.png" alt="">
+    <section class="firstpart">
+        <div class="intro">
+            <div class="photos">
+                <img src="/static/IMAGES/cadres.svg" alt="">
+                <img src="/static/IMAGES/pics.svg" alt="">
+                <img src="/static/IMAGES/paint.svg" alt="">
+                <img src="/static/IMAGES/book.svg" alt="">
+            </div>
+            <h3 class="title">Un dessin unique et personnalisable réalisé à la main avec passion!</h3>
+            <h1>Informations</h1>
+            <p>Vous avez envie d'un cadeau authentique, riche en émotion, pour passer votre message d'amour à un proche lors d'une occasion particulière ou vous offrir une œuvre unique pour compléter la décoration de votre mur des souvenirs ? 
+            Je vous propose d'immortaliser une ou plusieurs photo(s) souvenir de personne(s) ou animal qui ont marqué votre vie où celle de vos proches, en un dessin unique et personnalisable aussi bien sur le support, la couleur ou la technique.</p>
+            <h3 class="title">Quels sont mes délais ?</h3>
+            <p>Comptez 15 jours à 1 mois en fonction du nombre de sujets sur votre commande ainsi que de ma liste d'attente (pensez à anticiper pour Noël car en novembre mon planning et souvent complet) </p>
+            <h3>Comment me passer commande ?</h3>
             <ul>
-                <li>Photo sans filtres, ni retouches (ne recadrez pas je m'en occuperai) </li>
-                <li>Nette  (en zoomant vous pouvez voir la pupille facilement) </li>
-                <li>Une bonne luminosité (éviter les contre-jour) </li>
+                <li>Contactez-moi par sms, par mail, via messenger ou encore instagram pour me parler de votre projet (lien  "contact") je vous répondrai au plus vite pour en discuter et vous conseiller si besoin. 
+                </li>
+                <li>Pour une commande urgente envoyez-moi votre/vos photo/s  accompagné de vos envies pour celle-ci directement par mail en écrivant "COMMANDE URGENTE + DATE DE LIVRAISON SOUHAITÉE " dans la barre d'objet</li>
             </ul>
         </div>
-        <h3>À savoir</h3>
-        <p>Pour votre projet de réunir plusieurs personnes qui ne seraient pas sur la même photo, je peux, en fonction de la qualité, les réunir en un seul dessin.﻿ Il m'est aussi possible de reproduire une photo ancienne (style réaliste ou rétro) . 
-            Dans tous les cas si vous voulez savoir si je suis en mesure de reproduire votre photo ? Envoyez-la moi par mail en allant sur l'onglet "contact" et je vous dirai s'il me sera possible ou non de la reproduire ( je préfèrerai, dans certains cas, vous refuser un projet plutôt que de vous décevoir, croisons les doigts cela n'est pas encore arrivée !) </p>
+        <div class="howto">
+            <h2>Comment choisir la photo ?</h2>
+            <p>Si vous désirerez un rendu réaliste ou un dessin grand format, il sera important de bien choisir la ou les photos que vous m'enverrez, pour ce faire elle devra repondre à plusieurs critères. (voir plus) </p>
+            <div>
+                <img src="/static/IMAGES/hero.png" alt="">
+                <ul>
+                    <li>Photo sans filtres, ni retouches (ne recadrez pas je m'en occuperai) </li>
+                    <li>Nette  (en zoomant vous pouvez voir la pupille facilement) </li>
+                    <li>Une bonne luminosité (éviter les contre-jour) </li>
+                </ul>
+            </div>
+            <h3>À savoir</h3>
+            <p>Pour votre projet de réunir plusieurs personnes qui ne seraient pas sur la même photo, je peux, en fonction de la qualité, les réunir en un seul dessin.﻿ Il m'est aussi possible de reproduire une photo ancienne (style réaliste ou rétro) . 
+                Dans tous les cas si vous voulez savoir si je suis en mesure de reproduire votre photo ? Envoyez-la moi par mail en allant sur l'onglet "contact" et je vous dirai s'il me sera possible ou non de la reproduire ( je préfèrerai, dans certains cas, vous refuser un projet plutôt que de vous décevoir, croisons les doigts cela n'est pas encore arrivée !) </p>
+        </div>
     </section>
     <section class="techniques">
         <img src="/static/IMAGES/hero.png" alt="">

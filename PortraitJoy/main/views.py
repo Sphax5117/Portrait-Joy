@@ -22,6 +22,9 @@ def infos(request):
 def avis(request):
     return render(request, "avis.html")
 
+def legal(request):
+    return render(request, "legal.html")
+
 def creations(request):
     creations = Creations.objects.all()
     return render(request, "creations.html", {'creations': creations})
