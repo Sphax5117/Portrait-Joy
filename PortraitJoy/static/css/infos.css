@@ -10,8 +10,37 @@
     align-items: center;
     width: 50%;
     margin: 30px;
-    text-align: center;
+    text-align: left;
 }
+
+
+.secondpart{
+    display: flex;
+    flex-direction: row;    
+}
+
+
+.techniques{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    width: 45%;
+    margin: 30px;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.conseils{
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    width: 45%;
+    margin: 30px;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
 
 .howto {
     display: flex;
@@ -20,7 +49,8 @@
     align-items: center;
     width: 45%;
     margin: 30px;
-    text-align: center;
+    text-align: left;
+    margin-bottom: 100px;
 }
 
 .firstpart{
@@ -28,7 +58,63 @@
     flex-direction: row;
 }
 
+@media (max-width: 992px) {
+    .firstpart{
+        flex-direction: column;
+    }
+
+    .intro{
+        width: auto;
+    }
+
+    .howto{
+        width: auto;
+    }
+
+    .secondpart{
+        flex-direction: column;
+    }
+
+    .techniques{
+        width: auto;
+    }
+
+    .conseils{
+        width: auto;
+    }
+   }
+
+
+
+
 .title{
  font-family: "Lobster Two";
  color: #E7AE85;
+ text-align: center;
 } 
+
+.title1{
+    color: #E7AE85;
+    font-size: 50px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+li {
+    text-align: start;
+}
+
+ul{
+    margin-left: 20px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.howto div{
+    display: flex;
+    flex-direction: row;
+}
+
