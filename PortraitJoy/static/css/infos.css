@@ -35,7 +35,6 @@
     display: flex;
     flex-direction: column;   
     align-items: center;
-    width: 45%;
     margin: 30px;
     text-align: left;
     margin-bottom: 100px;
@@ -53,11 +52,87 @@
     margin-bottom: 100px;
 }
 
+.howto img{
+    width: 200px;
+    height: 150px;
+}
 .firstpart{
     display: flex;
     flex-direction: row;
 }
 
+
+
+
+.title{
+    font-family: "Lobster Two";
+    color: #E7AE85;
+    text-align: center;
+   } 
+   
+   .title1{
+       color: #E7AE85;
+       font-size: 50px;
+       text-align: center;
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+   }
+   
+   li {
+       text-align: start;
+   }
+   
+   ul{
+       margin-left: 20px;
+   }
+   
+   img{
+       width: 100px;
+       height: 100px;
+   }
+   
+   .howto div{
+       display: flex;
+       flex-direction: row;
+   }
+   
+   .conseils div{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+   }
+   
+   .cadre{
+       width: 250px;
+       height: 300px;
+       border-radius: 10px;
+   }
+   
+   .insideContainer{
+       width: 45%;
+   }
+   
+   .subtitle{
+       color: #E7AE85;
+       font-size: 10px;
+   }
+   
+   .subtitle a {
+       text-decoration: none;
+       color: #E7AE85;
+   }
+   
+   .subtitle a:hover{
+       color: #dc7d39;
+   }
+
+   .faber{
+    width: 115px;
+   }
+
+   .headImg{
+    width: 150px;
+    height: 150px;
+   }
 @media (max-width: 992px) {
     .firstpart{
         flex-direction: column;
@@ -79,42 +154,9 @@
         width: auto;
     }
 
-    .conseils{
+    .insideContainer{
         width: auto;
+        margin: 10px;
     }
    }
-
-
-
-
-.title{
- font-family: "Lobster Two";
- color: #E7AE85;
- text-align: center;
-} 
-
-.title1{
-    color: #E7AE85;
-    font-size: 50px;
-    text-align: center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-
-li {
-    text-align: start;
-}
-
-ul{
-    margin-left: 20px;
-}
-
-img{
-    width: 100px;
-    height: 100px;
-}
-
-.howto div{
-    display: flex;
-    flex-direction: row;
-}
 
