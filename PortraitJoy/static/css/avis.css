@@ -1,0 +1,50 @@
+body{
+    padding: 0;
+}
+
+.firstPart{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.firstPart div{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avis{
+    width: 400px;
+    height: auto;
+}
+
+.firstPart h1{
+    color: #ffc7db;
+}
+
+
+.secondPart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .firstPart{
+        flex-direction: column;
+    }
+
+    .secondPart{
+        flex-direction: column;
+
+    }
+
+    .firstPart div{
+        width: 70%;
+    }
+  }

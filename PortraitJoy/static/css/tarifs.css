@@ -6,6 +6,9 @@
 .rightpart{
     width: 50%;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .leftpart{
@@ -30,10 +33,6 @@ img{
     font-size: 20px;
     justify-content: center;
     margin: 20px;
-}
-
-a{
-    color: grey !important;
 }
 
 .promo{
@@ -66,4 +65,26 @@ a{
 
 .cards{
     text-align: center;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .content {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    .rightpart{
+        width: auto;
+    }
+
+    .leftpart{
+        width: auto;
+    }
+  }
+
+.lastpart{
+    margin: 12px;
 }
