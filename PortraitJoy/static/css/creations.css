@@ -1,0 +1,39 @@
+.card-img, .card-img-bottom, .card-img-top{
+    width: auto !important;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+
+.card-img-top{
+    float: left;
+    width:  150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-body {
+    flex-direction: column;
+  }
+
+.card div p{
+    font-size: 12px !important;
+}
+
+body{
+    background: black;
+}
+
+img{
+    height: 500px;
+    width: 300px !important;
+}
+
+.thing{
+    display: inline-flex;
+    text-align: center;
+}

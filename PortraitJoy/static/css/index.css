@@ -171,13 +171,10 @@ header {
 .card-img-top{
     float: left;
     width:  150px;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
 }
 
-.card-body {
-    flex-direction: column;
-  }
 
 .card div p{
     font-size: 12px !important;
