@@ -4,31 +4,39 @@
 
 .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 20px;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-
-.card-img-top{
-    float: left;
-    width:  150px;
-    height: 150px;
-    object-fit: cover;
+.container div{
+    margin: 20px;
+    color: white;
+    justify-content: center;
+    height: 500px;
 }
 
-.card-body {
-    flex-direction: column;
-  }
+.container div img{
+    border-radius: 15px;
+    filter: brightness(90%);
+    transition: all 500ms ease-out;
+}
 
-.card div p{
-    font-size: 12px !important;
+.container div img:hover{
+    filter: brightness(100%);
+}
+
+.text{
+    position: relative;
+    top: -120px;
 }
 
 body{
     background: black;
 }
 
-img{
+.cardImg{
     height: 500px;
     width: 300px !important;
 }
@@ -37,3 +45,5 @@ img{
     display: inline-flex;
     text-align: center;
 }
+
+

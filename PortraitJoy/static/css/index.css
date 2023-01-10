@@ -168,6 +168,10 @@ header {
     z-index: 1000; 
   }
 
+.card-body {
+    flex-direction: column;
+}
+
 .card-img-top{
     float: left;
     width:  150px;

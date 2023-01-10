@@ -88,3 +88,11 @@ img{
 .lastpart{
     margin: 12px;
 }
+
+.devis{
+    color: #e7ae85;
+}
+
+.devis:hover{
+    color: #eea069;
+}
