@@ -1,1 +1,1 @@
-web: gunicorn portrait-joy.wsgi --log-file -
+web: gunicorn PortraitJoy.wsgi --log-file -
